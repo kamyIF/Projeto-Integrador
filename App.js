@@ -2,6 +2,8 @@
 // import {useNavigation} from "@react-navigation/native";
 import { View,Text,StyleSheet, TextInput,TouchableOpacity, StatusBar } from "react-native";
 
+// Raykkoner é legal!
+
 export default function Register() {
     return(
       <View style={styles.container}>
