@@ -22,8 +22,18 @@ export default function Register() {
               <TextInput style={styles.textInput} />
             </View>
             <View style={styles.textInputContainer} >
-              <Text style={styles.textInputLabel}>Nome do Usuario</Text>
+              <Text style={styles.textInputLabel}>Senha</Text>
               <TextInput style={styles.textInput} />
+            </View>
+            <View style={styles.textInputContainer} >
+              <Text style={styles.textInputLabel}>Confirma senha</Text>
+              <TextInput style={styles.textInput} />
+            </View>
+            <View style={styles.parteInferior}>
+              <Text style={styles.textInputLabel}>Possuo Cadastro</Text>
+              <TouchableOpacity style = {styles.botaoCadastro}>
+                <Text style = {styles.textoBotao}>Cadastrar</Text>
+              </TouchableOpacity>
             </View>
           </View>
         </View>
@@ -42,8 +52,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#161413"
   },
   viewCentral: {
-    height: 400,
-    width: 300,
+    height: 500,
+    width: 350,
     borderWidth: 5,
     borderColor: "#F2B707",
     borderRadius: 30,
@@ -55,10 +65,18 @@ const styles = StyleSheet.create({
   },
   textInput: {
     backgroundColor: "#2e2d2d",
-    borderRadius: 30
+    borderRadius: 10,
+    padding: 8
   },
   textInputContainer: {
     gap: 10,
     marginBottom: 20
+  },
+  botaoCadastro:{
+    backgroundColor: "red",
+  },
+  parteInferior:{
+    flexDirection: "row",
+    gap: 100,
   }
 });
