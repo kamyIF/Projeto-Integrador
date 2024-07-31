@@ -2,7 +2,6 @@
 // import {useNavigation} from "@react-navigation/native";
 import { View,Text,StyleSheet, TextInput,TouchableOpacity, StatusBar } from "react-native";
 
-// Clarab steve aqui
 
 export default function Register() {
     return(
@@ -10,24 +9,26 @@ export default function Register() {
         <View>
           <View style={styles.viewCentral}>
             <View style={styles.textInputContainer} >
-              <Text style={styles.textInputLabel}>Nome Completo</Text>
-              <TextInput style={styles.textInput} />
+              <Text style={styles.textInputLabel}>Nome de usuario</Text>
+              <TextInput style={styles.textInput} 
+              placeholder="Digite seu nome"/>
             </View>
             <View style={styles.textInputContainer} >
               <Text style={styles.textInputLabel}>Email</Text>
-              <TextInput style={styles.textInput} />
-            </View>
-            <View style={styles.textInputContainer} >
-              <Text style={styles.textInputLabel}>Nome do Usuario</Text>
-              <TextInput style={styles.textInput} />
+              <TextInput style={styles.textInput} 
+              placeholder="Digite seu email"/>
             </View>
             <View style={styles.textInputContainer} >
               <Text style={styles.textInputLabel}>Senha</Text>
-              <TextInput style={styles.textInput} />
+              <TextInput style={styles.textInput} 
+              placeholder="Digite sua senha"/>
             </View>
             <View style={styles.textInputContainer} >
               <Text style={styles.textInputLabel}>Confirma senha</Text>
-              <TextInput style={styles.textInput} />
+              <TextInput style={styles.textInput} 
+              placeholder="Digite sua senha novamente"
+              placeholderTextColor={"#F2B707"}/>
+              
             </View>
             <View style={styles.parteInferior}>
               <Text style={styles.textInputLabel}>Possuo Cadastro</Text>
