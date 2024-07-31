@@ -73,10 +73,15 @@ const styles = StyleSheet.create({
     marginBottom: 20
   },
   botaoCadastro:{
-    backgroundColor: "red",
+    backgroundColor: "#F2B707",
+    borderRadius: 5,
+    padding: 6
   },
   parteInferior:{
     flexDirection: "row",
     gap: 100,
+  },
+  textoBotao:{
+    fontWeight: "bold", 
   }
 });
